@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    background-color: hsl(61, 95%, 85%);
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+.logo{
+    width: 10%;
+    padding-top: 15px;
+    margin-left: 10px;
+}
+
+main{
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+
+.texto_encriptador{
+    margin-top: 90px;
+    border: none;
+    color:black;
+    text-transform: lowercase;
+}
+
+::placeholder{
+    font-family: "Inter";
+    color:black;
+} 
+    .texto_encriptador:focus {
+        outline: none;
+    }
+
+.resultado_encriptado{
+    border: none;
+    border-radius: 24px;
+    color:black;
+    background-image: url("/Assets/Logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 98px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: fixed;
+    background-color:white ;
+}
+    .resultado_encriptado:focus{
+        outline: none;
+    }
+
+.botones{
+    display: flex;
+    margin-top: 18px;
+    gap:24px;
+}
+
+.boton_encriptar{
+    background-color: rgb(121, 246, 250) ;
+    border: 1px solid rgb(35, 172, 252);
+    border-radius: 24px;
+    color: black;
+    cursor:pointer;
+    height: 67px;
+    width: 328px;
+    font-size: large;
+}
+
+.boton_desencriptar{
+    background-color: rgb(121, 246, 250) ;
+    border: 1px solid rgb(35, 172, 252);
+    border-radius: 24px;
+    color: black;
+    cursor:pointer;
+    height: 67px;
+    width: 328px;
+    font-size:large;
+}
+
+.copiar{
+    background-color: rgb(121, 246, 250) ;
+    border: 1px solid rgb(35, 172, 252);
+    border-radius: 24px;
+    color: black;
+    cursor:pointer;
+    height: 67px;
+    width: 328px;
+    margin-left: 100px;
+    margin-top: 680px;
+    margin-bottom: 50px;
+    position: absolute;
+    font-size: large;
+}
+
+.informacion{
+    color: black;
+    font-size: 15px;
+}
+
+.footer{
+    background-color:white ;
+    color: black;
+    text-align: center;
+    font-family: "Inter";   
+    font-size: 15px; 
+}
+
+@media(max-width: 1200px){
+    .header{
+        padding:10%;
+    }
+    
+    .principal{
+        flex-direction: column-reverse;
+        padding:5%;
+    }
+
+    .contenido{
+        width: auto;
+    }
+}
